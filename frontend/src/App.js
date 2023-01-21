@@ -63,7 +63,7 @@ function App() {
       email: form.email,
     };
     await postData("http://localhost:3000/user", senddata).then((data) => {
-      console.log(data);
+      // console.log(data);
     });
   };
 

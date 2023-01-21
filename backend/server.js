@@ -11,7 +11,7 @@ app.use(cors());
 
 app.post("/user", async (req, res) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const addingRecord = new User(req.body);
     const insertMens = await addingRecord.save();
     res.status(201).send(insertMens);
@@ -41,5 +41,5 @@ app.get("/user/:id", async (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Connection setup done at port no. ${port}`);
+  // console.log(`Connection setup done at port no. ${port}`);
 });
